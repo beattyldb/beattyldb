@@ -1,0 +1,147 @@
+/**
+ * GLOBAL STYLING
+ */
+
+/* youtube video alex sent, said to get in the habit of adding this to your CSS files, 
+not 100% sure what it does but its supposed to help woith grids, borders etc */
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+}
+
+/* background colour for body section set */
+body {
+
+    background-color: #044D4B;
+}
+
+/* header class properties defined, borders defined and margins set */
+.header-style {
+
+    font-family: BD Supper;   
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 100px 100px 100px;
+
+}
+
+/* header class image resized */
+.header-style img {
+    width: 10%; /* resizes image to 10% of its orginal width */
+  height: auto; 
+}
+
+/* allium class properties defined, borders defined and margins set */
+.allium-header {
+
+    font-family: BD Supper;
+    color: mediumpurple;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: floralwhite;
+
+    border-style: solid;
+    border-width: 7px;
+    border-color: mediumpurple;
+    border-radius: 5px;
+    width: 50%;
+    padding: 30px;
+
+}
+
+/* allium class image resized */
+.allium-header img{
+
+    width: 30%; /* resizes image to 30% of its orginal width */
+  height: auto; 
+}
+
+/* azure class properties defined, borders defined and margins set */
+.azure-header {
+
+    font-family: BD Supper;
+    color: lightgrey;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: floralwhite;
+
+    border-style: solid;
+    border-width: 7px;
+    border-color: lightgrey;
+    border-radius: 5px;
+    width: 50%;
+    padding: 30px;
+
+
+}
+
+/* azure class image resized */
+.azure-header img{
+
+    width: 30%; /* resizes image to 30% of its orginal width */
+  height: auto; 
+}
+
+/* orchid class properties defined, borders defined and margins set */
+.orchid-header {
+
+    font-family: BD Supper;
+    color: lightblue;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: floralwhite;
+
+    border-style: solid;
+    border-width: 7px;
+    border-color: lightblue;
+    border-radius: 5px;
+    width: 50%;
+    padding: 30px;
+
+}
+
+/* orchid class image resized */
+.orchid-header img{
+
+    width: 30%; /* resizes image to 30% of its orginal width */
+  height: auto; 
+}
+
+/* paragraph-1 class properties defined */
+.paragraph-1 {
+
+    color: white;
+    font-size: 17px;
+    font-family: helvetica;
+}
+
+/* paragraph class properties defined */
+.paragraph {
+
+    color: black;
+    font-size: 15px;
+}
+
+/* link class properties defined */
+.link {
+
+    font-family: BD Supper;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+/* link class image resized */
+.link img{
+
+    width: 10%; /* resizes image to 10% of its orginal width */
+  height: auto; 
+}
+
