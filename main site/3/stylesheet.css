@@ -1,0 +1,201 @@
+/* style sheet for codepractice3 */
+
+/* youtube video alex sent, said to get in the habit of adding this to your CSS files, 
+not 100% sure what it does but its supposed to help woith grids, borders etc */
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+}
+
+body {
+
+	background-color: #5a128a;
+}
+
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
+
+.cat-roper img{
+ 	
+ 	width: 60%; /* resizes image to 30% of its orginal width */
+  	height: auto; 
+}
+
+.cat-garf img{
+ 	
+ 	width: 60%; /* resizes image to 30% of its orginal width */
+  	height: auto; 
+}
+
+.cat-seagull img{
+ 	
+ 	width: 60%; /* resizes image to 30% of its orginal width */
+  	height: auto; 
+}
+
+.cat-loon img{
+ 	
+ 	width: 40%; /* resizes image to 30% of its orginal width */
+  	height: auto; 
+}
+
+.cat-starling img{
+ 	
+ 	width: 60%; /* resizes image to 30% of its orginal width */
+  	height: auto; 
+}
+
+.button1 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: orangered;
+		border: orange 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+
+}
+
+
+/* header section styling*/
+.header-style {
+
+	font-family: Rubik Mono One;
+	font-size: 1em;
+	color: white;
+	
+}
+
+.subtext {
+
+	font-family: Rubik Mono One;
+	font-size: 0.9em;
+}
+
+.cat-grid {
+	display: grid;
+	gap: 2%;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.cat-grid-col-span-2 {
+
+	grid-column: span 2;
+}
+
+.cat-grid-row-span-2 {
+
+	grid-row: span 2;
+}
+
+h3 {
+
+	font-family: Silkscreen;
+  	font-size: 35px;
+  	margin: 40px 0;
+  	text-align: center;
+
+}
+
+
+/* div for cat roper styling */
+.cat-roper{
+
+	background-color: orange;
+	border-color: orangered;
+	border-style: solid;
+	border-width: 0.25em;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+    margin: 0, auto;
+
+}
+
+.cat-garf {
+
+	background-color: orange;
+	border-color: orangered;
+	border-style: solid;
+	border-width: 0.25em;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+    margin: 0, auto;
+}
+
+.cat-seagull {
+	
+	background-color: orange;
+	border-color: orangered;
+	border-style: solid;
+	border-width: 0.25em;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+    margin: 0, auto;
+}
+
+.cat-starling {
+
+	background-color: orange;
+	border-color: orangered;
+	border-style: solid;
+	border-width: 0.25em;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+    margin: 0, auto;
+}
+
+.cat-loon {
+
+	background-color: orange;
+	border-color: orangered;
+	border-style: solid;
+	border-width: 0.25em;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+    margin: 0, auto;
+}
+
+.roper-text {
+
+	font-family: Helvetica;
+	color: white;
+	font-size: 1em;
+}
+
+.garf-text {
+
+	font-family: Helvetica;
+	color: white;
+	font-size: 1em;
+}
+
+.seagull-text {
+
+	font-family: Helvetica;
+	color: white;
+	font-size: 1em;
+}
+
+.starling-text {
+
+	font-family: Helvetica;
+	color: white;
+	font-size: 1em;
+}
+
+.loon-text {
+
+	font-family: Helvetica;
+	color: white;
+	font-size: 1em;
+}
