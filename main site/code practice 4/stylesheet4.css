@@ -1,0 +1,436 @@
+/*style sheet */
+
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+}
+
+
+/* styling for index page */
+
+/* setting background colour */
+body {
+
+	background-color: black;
+	color: white;
+}
+
+
+/* styling for the learn more buttons */
+.button1 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: orangered;
+		border: orange 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+}
+
+.button1:hover {
+  background-color: orange; /* Green */
+  color: white;
+}
+
+.head-text {
+
+	text-align: center;
+	margin-top: 100px;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+
+.subhead-text {
+
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+h4 {
+
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.choose-grid {
+	 
+	 display: grid;
+	 gap: 2%;
+	grid-template-columns: repeat(4, 1fr);
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+
+.fall-choose img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .fall-choose {
+
+ 	text-align: center;
+ }
+
+.winter-choose img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winter-choose {
+
+ 	text-align: center;
+ }
+
+.spring-choose img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spring-choose {
+
+ 	text-align: center;
+ }
+
+.summer-choose img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summer-choose {
+
+ 	text-align: center;
+ }
+
+/* styling for interior pages --------------------------------------------*/
+.fall-images-grid {
+	display: grid;
+	gap: 2%;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.candle-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.window-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.fallstreet-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.fallcat-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.fallbench-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.fallcoffee-img img{
+ 	
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.candle-img img:hover {
+
+	filter: blur(0);
+}
+.window-img img:hover {
+
+	filter: blur(0);
+}
+.fallstreet-img img:hover {
+
+	filter: blur(0);
+}
+.fallcat-img img:hover {
+
+	filter: blur(0);
+}
+.fallbench-img img:hover {
+
+	filter: blur(0);
+}
+.fallcoffee-img img:hover {
+
+	filter: blur(0);
+}
+
+
+.button2 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: black;
+		border: white 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+		position: relative;
+		bottom: 10px;
+}
+
+.button2:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+/* winter page styling -----------------------*/
+.winter-images-grid {
+	display: grid;
+	gap: 2%;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.winter1-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winter2-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.winter3-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winter4-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winter5-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.winter6-img img{
+ 	
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button2 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: black;
+		border: white 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+		position: relative;
+		bottom: 10px;
+}
+
+.button2:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+/* spring page styling -----------------------*/
+.spring-images-grid {
+	display: grid;
+	gap: 2%;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.spring1-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spring2-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.spring3-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spring4-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spring5-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spring6-img img{
+ 	
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button2 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: black;
+		border: white 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+		position: relative;
+		bottom: 10px;
+}
+
+.button2:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
+
+/* summer page styling -----------------------*/
+.summer-images-grid {
+	display: grid;
+	gap: 2%;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.summer1-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summer2-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.summer3-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summer4-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summer5-img img{
+ 	
+ 	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summer6-img img{
+ 	
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button2 {
+
+		font-family: Helvetica;
+		font-size: 0.9em;
+		color: white;
+		background-color: black;
+		border: white 0.16em solid;
+		padding: 0.3em 1.2em;
+		margin:0 0.1em 0.1em 0;
+		border-radius: 2em;
+		text-decoration: none;
+		position: relative;
+		bottom: 10px;
+}
+
+.button2:hover {
+  background-color: white; /* Green */
+  color: black;
+}
