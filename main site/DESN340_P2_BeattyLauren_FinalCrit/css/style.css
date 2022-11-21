@@ -1,0 +1,549 @@
+/* stylesheet for 53 redesign 
+
+
+colours: ;
+white #
+black #
+red highlight #
+contrast button colour #
+
+typeface: ;
+
+Monteserrat for main titles
+
+
+globally applied styles should be at the top
+*/
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #white;
+}
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	margin: 1;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
+}
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "GT-Super";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins';
+}
+
+a:hover {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+
+/* image rules */
+
+img {
+
+	width: 100%;
+}
+
+
+
+
+/* type hierarchy */
+
+
+
+
+
+
+/* header styles and rules ----------------------*/
+
+header {
+	background-color: #153b84;
+	color: #black;
+	position: fixed;
+	height: 90px;
+	z-index: 4;
+	font-size: 0.7em;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+.icon {
+	fill:  whitesmoke;
+}
+
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: #fff;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+/* homepage hero styles and rules -----------------------------------------------------*/
+#hero {
+	background-image: url("../images/hero1.jpg");
+	/* background-size: cover; */
+	background-color: red;
+	height: 90vh;
+}
+
+#hero img{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-chunk {
+	width: 400px;
+	color: #fff;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+	text-align: center;
+}
+
+#hero h5 {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+/* from the "test" index ----------------*/
+#hero3{
+	padding-top:150px;
+	text-align: center;
+
+}
+
+#hero3 .col-8 {
+	margin: 0 auto;
+}
+
+
+/* homepage about  styles and rules */
+
+#about {
+
+
+}
+
+/* about section - -----------test */
+
+#about2 {
+
+	padding-top: 90px;
+	text-align: center;
+}
+
+#about2 .col-8 {
+
+	margin: 0 auto;
+
+}
+
+#about2 img{
+	width: 100%;
+	
+
+}
+
+/* homepage product features styles and rules */
+
+#feature {
+
+
+}
+
+/*-- from test page */
+#paper2 {
+
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	
+	overflow: hidden;
+}
+
+#pencil2 {
+
+
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	
+	overflow: hidden;
+
+}
+
+/* homepage video styles and rules */
+
+#video {
+
+
+}
+
+/* from test page */
+#video2 {
+	background-color: black;
+	width: 970px;
+	margin: -100px auto;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	z-index: -4;
+}
+
+#video2 video {
+	display: block;
+	margin: 0 auto;
+}
+
+/* homepage newsletter styles and rules */
+
+#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+}
+
+.btn {
+	border-radius: 50px;
+}
+
+/* homepage footer styles and rules */
+
+footer {
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	color: #fff;
+	position: relative;
+	z-index: 4;
+	margin-top: 300px;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer li {
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+
+
+#foot-links {
+	margin-top: 40px;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-links img {
+	max-width: 70px;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
+}
+
+/* ------------------------------------------------ about page */
+
+/* about page hero styles and rules */
+#hero-about {
+	padding-top:150px;
+	text-align: center;
+
+}
+
+#hero-about .col-8 {
+	margin: 0 auto;
+}
+
+/* about page WHO styles and rules */
+#why{
+
+text-align: left;
+margin-left: 300px;
+padding-top: 100px;
+max-width: 70rem;
+
+}
+
+#why .col-8 {
+
+
+}
+
+/*-------------------------------------------HOW DO I MOVE TEXT TO RIGHT?*/
+/* about page WHAT styles and rules */
+#what{
+
+	text-align: left;
+	margin-left: 300px;
+	padding-top: 100px;
+	max-width: 70rem;
+
+}
+
+/* newsletter styles and rules */
+
+#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+}
+
+.btn {
+	border-radius: 50px;
+}
+
+/* footer styles and rules */
+
+#footer {
+
+
+}
+
+
+/* -------------------------------------------------------- product/pencil page */
+
+/* pencil page hero styles and rules */
+ #hero-pencil {
+	
+	padding-top:150px;
+	text-align: left;
+
+ }
+
+ #hero-pencil .col-8 {
+	margin: 0 auto;
+}
+
+
+/* pencil page product styles and rules */
+#product{
+
+}
+
+/* newsletter styles and rules */
+
+#newsletter {
+
+
+}
+
+/* footer styles and rules */
+
+#footer {
+
+
+}
