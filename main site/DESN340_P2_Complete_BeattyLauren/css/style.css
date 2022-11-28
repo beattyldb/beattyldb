@@ -1,0 +1,706 @@
+/* stylesheet for 53 redesign 
+
+
+colours: ;
+white #
+black #
+red highlight #
+contrast button colour #
+
+typeface: ;
+
+Monteserrat for main titles
+
+
+globally applied styles should be at the top
+*/
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #white;
+}
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	margin: 1;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
+}
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "GT-Super";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins';
+}
+
+a:hover {
+
+	color: #153b84;
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+
+/* image rules */
+
+img {
+
+	width: 100%;
+}
+
+
+/* universal newsletter and footer rules */
+#newsletter {
+	height: 20vh;
+	margin-top: 60px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+	border-color: black;
+	color: black;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.btn {
+	border-radius: 50px;
+	margin-left: -80px;
+}
+
+
+footer {
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	color: #fff;
+	position: relative;
+	z-index: 4;
+	margin-top: 100px;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer li {
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+
+#foot-links {
+	margin-top: 40px;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-links img {
+	max-width: 70px;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
+}
+
+
+
+
+/* header styles and rules ----------------------*/
+
+header {
+	background-color: white;
+	color: black;
+	position: fixed;
+	height: 90px;
+	z-index: 10;
+	font-size: 0.7em;
+	border-color: black;
+	border-style: solid;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	
+
+}
+
+header a {
+
+	color: black;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+/* ------------------WHY WONT IT GO BLACK? */
+.icon {
+	fill:  black;
+}
+
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: black;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+/* homepage hero styles and rules -----------------------------------------------------*/
+
+/* labelled with numbers because I had to restart my index page */
+
+#hero3{
+	padding-top:150px;
+	text-align: left;
+	background-image: url("../images/hero1.jpg");
+	height: 100vh;
+	background-position: bottom left;
+	background-size: cover;
+
+}
+
+#hero3 img {
+
+	background-size: cover;
+}
+
+#hero3 .col-8 {
+	margin-left: 20px;
+	margin-top: 170px;
+
+}
+
+#hero3 h2 {
+
+	text-align: left;
+	padding-left: ;
+	font-size: 60px;
+}
+
+#hero3 h5 {
+
+	text-align: left;
+	max-width: 30rem;
+}
+
+#hero3 a {
+
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+	color: black;
+	font-size:15px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+#hero3 a:hover {
+
+	background-image: url("../images/downarrow.svg");
+	color: transparent;
+}
+
+
+/* homepage about section  */
+
+#about2 {
+
+	padding-top: 90px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#about2 .col-8 {
+
+	margin: 0 auto;
+
+}
+
+#about2 img{
+	width: 100%;
+
+}
+
+#about2 a {
+
+	border-style: solid;
+	border-color: white;
+	border-radius: 30px;
+	color: white;
+	font-size:15px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+
+#about2 a:hover {
+
+	background-color: white;
+	color: black;
+}
+
+/* homepage product features styles and rules */
+
+#paper2 {
+
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 700px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 80px;
+	margin-top: 90px;
+	padding: 100px;
+	
+	overflow: hidden;
+}
+
+#paper2 h2 {
+
+	margin-top: 140px;
+
+}
+
+
+#pencil2 {
+
+
+	background-color: white;
+	color: black;
+	width: 95vw;
+	height: 550px;
+	margin: 0 auto;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 50px;
+	margin-top: 70px;
+	padding: 100px;
+	position: relative;
+	z-index: 1;
+	
+	overflow: hidden;
+
+}
+
+#pencil2 h2 {
+
+	margin-top: 30px;
+
+}
+
+#pencil2 a {
+
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+	color: black;
+	font-size:15px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+
+#pencil2 a:hover {
+
+	color: white;
+	background-color: black;
+}
+
+
+/* ----------------------------------------------------------------------------- about page */
+
+/* about page hero styles and rules */
+#hero-about {
+	padding-top:150px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding-bottom: 150px;
+	background-image: url("../images/hero2.jpg");
+	background-position: center;
+	height: 98vh;
+
+	
+	background-size: cover;
+
+}
+
+#hero-about h2 {
+
+	font-size: 60px;
+}
+
+#hero-about .col-8 {
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+#hero-about a {
+
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	background-image: url("../images/downarrow.svg");
+	color: transparent;
+	border-radius: 30px;
+	text-align: center;
+	font-size:15px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+/* about page WHO styles and rules */
+#why{
+
+	text-align: left;
+	background: white;	
+	color: black;
+	max-width: 70vw;
+	height: 300px;
+	margin: 0 auto;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 50px;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-right: 50px;
+	
+	overflow: hidden;
+
+}
+
+#why h2 {
+
+	text-align: center;
+	margin-top: 60px;
+}
+
+#why .col-8 {
+
+
+}
+
+/* about page WHAT styles and rules */
+#what{
+
+	text-align: left;
+	background: white;	
+	color: black;
+	max-width: 70vw;
+	height: 410px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	overflow: hidden;
+
+}
+
+#what h2 {
+
+	text-align: center;
+	margin-top: 130px;
+}
+
+
+/* ------------------------------------------------------------------- product/pencil page */
+
+/* pencil page hero styles and rules */
+ #hero-pencil {
+	
+	padding-top:150px;
+	text-align: left;
+	margin-left: 70px;
+
+ }
+
+ #hero-pencil a {
+
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+	color: black;
+	font-size:15px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 30px;
+
+}
+
+#hero-pencil a:hover {
+
+	color: white;
+	background-color: black;
+}
+
+ #hero-pencil .col-8 {
+	margin: 0 auto;
+}
+
+#hero-pencil .col-7 {
+
+	padding-left: 70px;
+}
+
+.feat {
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+
+/* idk why the images are getting squished when the page is small :( */
+.feat img {
+
+	max-width: 120px;
+	
+}
+
+.feat p {
+
+	font-weight: 400;
+
+}
+
+.col span {
+
+	font-weight: 300;
+	font-size: 12px;
+
+}
+
+/* pencil video styles and rules */
+
+
+#video2 {
+	background-color: black;
+	height: 480px;
+	width: 854px;
+	margin: 200px auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: 20px; 
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+}
+
+#video2 video {
+	display: block;
+	margin: 0 auto;
+
+}
+
+.video-title h2 {
+
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 0px;
+	color: white;
+}
+
+.video-title p {
+
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 0px;
+	color: white;
+}
+
+#video-section {
+
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 700px;
+	margin: 0 auto;
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 30px;
+	margin-top: 70px;
+}
+
+
